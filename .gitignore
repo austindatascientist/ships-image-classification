@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.build/
+dist/
+*.log
+.env
+
+# Virtual environments
+.venv/
+venv/
+
+# Training outputs
+runs/
+legacy_runs/
+
+# Datasets
+data/
+models/
+
+# Model weights
+*.pt
+*.onnx
+
+# Cache files
+*.cache
+
+# Credentials
+.pypirc
+
+# IDE/tool config
+.claude/
+
+# Docker volumes (permission issues)
+labelstudio-docker/

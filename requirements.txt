@@ -1,0 +1,27 @@
+# ===============================
+# Dependencies for training + inference
+# ===============================
+
+# Core (required for all)
+numpy>=1.25
+pillow>=10.0.0
+
+# Platform-specific
+pyobjc-framework-Cocoa>=10.0; sys_platform == 'darwin'  # macOS GUI support
+pywin32>=306; sys_platform == 'win32'                   # Windows system utilities
+
+# Training (PyTorch + YOLO) - this is the heavy part ~2GB
+torch>=2.2.0
+ultralytics>=8.2.0
+
+# ONNX export/inference
+onnx>=1.14.0,<=1.19.1
+onnxruntime>=1.17.0
+onnxslim>=0.1.0
+
+# Dataset download
+kagglehub>=0.3.0
+tqdm>=4.65.0
+
+# Visualization (optional, for --show flag)
+matplotlib>=3.3.0
